@@ -17,8 +17,18 @@
     
 
             <section class="section1">
-                <button class="botão" id='calc' onclick='calcular();'><p class="igual">=</p></button>   
-                        
+                <select name="operacao" id="operacao" onchange="operacao()">
+                    <option value="0">Escolha uma Operação</option>
+                    <option value="1">Adição</option>
+                    <option value="2">Subtração</option>
+                    <option value="3">Divisão</option>
+                    <option value="4">Multiplicação</option>
+                </select>
+                <p>1º: <input type="text" id="n1"></p>
+                <p>2º: <input type="text" id="n2"></p>
+
+                <button class="botão" id='calc' onclick='calcular();'><p>=</p></button>   
+                <p id="repost"></p>
             </section>
 
             
